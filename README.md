@@ -6,11 +6,6 @@
 
 This is a backend application project. 
 
-References: 
-
-https://www.iau.org/public/themes/constellations/
-https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
-
 <br>
 
 ## Requirements
@@ -62,6 +57,12 @@ For this project, there are two implemented database tables. The database data r
 <br>
 
 ## Resources
+
+
+References: 
+
+https://www.iau.org/public/themes/constellations/
+https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
 
 <br>
 
