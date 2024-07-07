@@ -2,17 +2,9 @@
 
 # Starlit_One: An Astronomical Catalog Application
 
-## Introduction
-
-This is a backend application project. 
-
-<br>
-
-## Requirements
-
 ## Description of the project
 
-This project creates a simple astronomical catalog of star patterns such as constellations and asterisms.
+This backend application project creates a simple astronomical catalog of star patterns such as constellations and asterisms.
 
 - A star pattern is a constellation or a group of stars (IUA, 2024)
 - A constellation is an official or defined star pattern (International Astronomical Union (IUA, 1930)
