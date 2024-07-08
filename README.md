@@ -28,13 +28,13 @@ For this project, there are two implemented database tables. The database data r
 
 ### Star Pattern
 
-| id | name            | description         | discovery_period | pattern_type  | main_star_count | 
+| id | name            | translation         | discovery_period | pattern_type  | main_star_count | 
 | -- | --------------- | ------------------- | ---------------- | ------------- | --------------- |
-| 1  | Canes Venatici  | The hunting dogs    | Modern           | Constellation | 3               |
-| 2  | Sagitta         | The arrow           | Ancient          | Constellation | 4               |
-| 3  | Septentrio      | Seven plough oxen   | Ancient          | Asterism      | 7               |
-| 4  | Summer Triangle | The summer triangle | Modern           | Asterism      | 3               |
-| 5  | Ursa Minor      | The little bear     | Ancient          | Constellation | 7               |
+| 1  | Canes Venatici  | The Hunting Dogs    | Modern           | Constellation | 3               |
+| 2  | Sagitta         | The Arrow           | Ancient          | Constellation | 4               |
+| 3  | Septentrio      | Seven Plough Oxen   | Ancient          | Asterism      | 7               |
+| 4  | Summer Triangle | The Summer Triangle | Modern           | Asterism      | 3               |
+| 5  | Ursa Minor      | The Little Bear     | Ancient          | Constellation | 7               |
 
 ### Stars
 
