@@ -57,7 +57,7 @@ For this project, there are two implemented database tables. The database data r
 | S15      | Altair                | blue-white   | subgiant                       | 4          |
 | S16      | Deneb                 | blue-white   | evolved supergiant             | 4          |
 | S17      | Vega                  | blue-white   | main sequence                  | 4          |
-| S18      | Polaris               | yellow-white | Multiple star system           | 5          |
+| S18      | Polaris               | yellow-white | multiple star system           | 5          |
 | S19      | Kochab                | orange-red   | variable giant                 | 5          |
 | S20      | Pherkad               | blue-white   | giant                          | 5          |
 | S21      | Yildun                | blue-white   | main sequence                  | 5          |
