@@ -12,6 +12,10 @@ This backend application project creates a simple astronomical catalog of star p
 
 The project has SQL tables, a parent class, inherited classes, interfaces, services, controller, and repository testing. 
 
+Some caveats:
+
+Only spring and summer phenomena were considered for this project. These constellations and asterisms manifest in the northern hemisphere. These star patterns are disjoint to simplify table structuring.
+
 <br>
 
 ## Class Diagram
@@ -22,13 +26,39 @@ The project has SQL tables, a parent class, inherited classes, interfaces, servi
 
 For this project, there are two implemented database tables. The database data represents true information for a simple astronomical catalog.
 
-| pattern_id | name            | description          | discovery_period   | pattern_type  |   
-| ---------- | --------------- | -------------------- | ------------------ | ------------- |  
-| P1         | Aquila          | The eagle            | Ancient            | Constellation |
-| P2         | Cygnus          | The swan             | Ancient            | Constellation |
-| P3         | Lyra            | The lyre             | Ancient            | Constellation |
-| P4         | Northern Cross  | The Northern Cross   | Middle Ages        | Asterism      |
-| P5         | Summer Triangle | The Summer Triangle  | Modern Era         | Asterism      |
+| id | name            | description          | discovery_period | pattern_type  | main_star_count | 
+| -- | --------------- | -------------------- | ---------------- | ------------- | --------------- |
+| 1  | Canes Venatici  | The hunting dogs     | Modern           | Constellation | 3               |
+| 2  | Sagitta         | The arrow            | Ancient          | Constellation | 4               |
+| 3  | Ursa Minor      | The little bear      | Ancient          | Constellation | 7               |
+| 4  | Big dipper      | The big dipper       | Ancient          | Asterism      | 7               |
+| 5  | Summer Triangle | The Summer Triangle  | Modern           | Asterism      | 3               |
+
+| star_id  | name | pattern_id | 
+| S1  |   |
+| S2  |   |
+| S3  |   |
+| S4  |   |
+| S5  |   |
+| S6  |   |
+| S7  |   |
+| S8  |   |
+| S9  |   |
+| S10 |   |
+| S11 |   |
+| S12 |   |
+| S13 |   |
+| S14 |   |
+| S15 |   |
+| S16 |   |
+| S17 |   |
+| S18 |   |
+| S19 |   |
+| S20 |   |
+| S21 |   |
+| S22 |   |
+| S23 |   |
+| S24 |   |
 
 <br>
 
@@ -55,6 +85,7 @@ References:
 
 https://www.iau.org/public/themes/constellations/
 https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
+https://www.constellation-guide.com/big-dipper/
 
 <br>
 
