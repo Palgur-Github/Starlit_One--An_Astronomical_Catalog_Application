@@ -26,39 +26,44 @@ Only spring and summer phenomena were considered for this project. These constel
 
 For this project, there are two implemented database tables. The database data represents true information for a simple astronomical catalog.
 
-| id | name            | description          | discovery_period | pattern_type  | main_star_count | 
-| -- | --------------- | -------------------- | ---------------- | ------------- | --------------- |
-| 1  | Canes Venatici  | The hunting dogs     | Modern           | Constellation | 3               |
-| 2  | Sagitta         | The arrow            | Ancient          | Constellation | 4               |
-| 3  | Ursa Minor      | The little bear      | Ancient          | Constellation | 7               |
-| 4  | Big dipper      | The big dipper       | Ancient          | Asterism      | 7               |
-| 5  | Summer Triangle | The Summer Triangle  | Modern           | Asterism      | 3               |
+### Star Pattern
 
-| star_id  | name | pattern_id | 
-| S1  |   |
-| S2  |   |
-| S3  |   |
-| S4  |   |
-| S5  |   |
-| S6  |   |
-| S7  |   |
-| S8  |   |
-| S9  |   |
-| S10 |   |
-| S11 |   |
-| S12 |   |
-| S13 |   |
-| S14 |   |
-| S15 |   |
-| S16 |   |
-| S17 |   |
-| S18 |   |
-| S19 |   |
-| S20 |   |
-| S21 |   |
-| S22 |   |
-| S23 |   |
-| S24 |   |
+| id | name            | description         | discovery_period | pattern_type  | main_star_count | 
+| -- | --------------- | ------------------- | ---------------- | ------------- | --------------- |
+| 1  | Canes Venatici  | The hunting dogs    | Modern           | Constellation | 3               |
+| 2  | Sagitta         | The arrow           | Ancient          | Constellation | 4               |
+| 3  | Septentriones   | The seven oxen      | Ancient          | Asterism      | 7               |
+| 4  | Summer Triangle | The Summer Triangle | Modern           | Asterism      | 3               |
+| 5  | Ursa Minor      | The little bear     | Ancient          | Constellation | 7               |
+
+### Stars
+
+| star_id  | name                  | color        | star_type                      | pattern_id | 
+| -------- | --------------------- | ------------ | ------------------------------ | ---------- |
+| S1       | Cor Caroli            | yellow-white | main-sequence/ variable binary | 1          |
+| S2       | Chara                 | yellow       | main sequence                  | 1          |
+| S3       | 20 Canum Venaticorum  | yellow-white | giant                          | 1          |
+| S4       | Sham                  | yellow       | luminous giant                 | 2          |
+| S5       | Beta Sagittae         | yellow       | luminous giant                 | 2          |
+| S6       | Gamma Sagittae        | orange-red   | giant                          | 2          |
+| S7       | Delta Sagittae        | red          | spectroscopic binary           | 2          |
+| S8       | Alioth                | blue-white   | variable                       | 3          |
+| S9       | Dubhe                 | blue-white   | spectroscopic binary           | 3          |
+| S10      | Alkaid                | blue         | main sequence                  | 3          |
+| S11      | Mizar                 | blue-white   | spectroscopic binary           | 3          |
+| S12      | Megrez                | blue-white   | main sequence                  | 3          |
+| S13      | Phecda                | blue-white   | main sequence                  | 3          |
+| S14      | Merak                 | blue-white   | main sequence                  | 3          |
+| S15      | Altair                | blue-white   | subgiant                       | 4          |
+| S16      | Deneb                 | blue-white   | evolved supergiant             | 4          |
+| S17      | Vega                  | blue-white   | main sequence                  | 4          |
+| S18      | Polaris               | yellow-white | Multiple star system           | 5          |
+| S19      | Kochab                | orange-red   | variable giant                 | 5          |
+| S20      | Pherkad               | blue-white   | giant                          | 5          |
+| S21      | Yildun                | blue-white   | main sequence                  | 5          |
+| S22      | Epsilon Ursae Minoris | yellow       | giant                          | 5          |
+| S23      | Akhfa Al Farkadain    | blue-white   | variable                       | 5          |
+| S24      | Anwar Al Farkadain    | yellow-white | main sequence                  | 5          |
 
 <br>
 
