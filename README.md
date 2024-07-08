@@ -32,8 +32,8 @@ For this project, there are two implemented database tables. The database data r
 | -- | --------------- | ------------------- | ---------------- | ------------- | --------------- |
 | 1  | Canes Venatici  | The hunting dogs    | Modern           | Constellation | 3               |
 | 2  | Sagitta         | The arrow           | Ancient          | Constellation | 4               |
-| 3  | Septentriones   | The seven oxen      | Ancient          | Asterism      | 7               |
-| 4  | Summer Triangle | The Summer Triangle | Modern           | Asterism      | 3               |
+| 3  | Septentrio      | Seven plough oxen   | Ancient          | Asterism      | 7               |
+| 4  | Summer Triangle | The summer triangle | Modern           | Asterism      | 3               |
 | 5  | Ursa Minor      | The little bear     | Ancient          | Constellation | 7               |
 
 ### Stars
@@ -89,7 +89,9 @@ For this project, there are two implemented database tables. The database data r
 References: 
 
 https://www.iau.org/public/themes/constellations/
+
 https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
+
 https://www.constellation-guide.com/big-dipper/
 
 <br>
