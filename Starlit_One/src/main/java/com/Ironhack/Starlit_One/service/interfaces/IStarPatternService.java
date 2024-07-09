@@ -17,4 +17,6 @@ public interface IStarPatternService {
 
     void updateStarPatternTranslation(String translation, Integer id);
 
+    void deleteStarPattern(Integer id);
+
 }

@@ -55,4 +55,11 @@ public class StarPatternController implements IStarPatternController {
         starPatternService.updateStarPatternTranslation(starPatternTranslationDTO.getTranslation(), id);
     }
 
+    // Delete a star pattern
+
+    @DeleteMapping("/star_pattern/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteStarPattern(@PathVariable Integer id) {
+        starPatternService.deleteStarPattern(id);
+    }
 }

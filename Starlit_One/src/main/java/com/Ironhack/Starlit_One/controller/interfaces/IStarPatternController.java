@@ -15,4 +15,6 @@ public interface IStarPatternController {
     List<StarPattern> getStarPatternsByDiscoveryPeriod(String discoveryPeriod);
 
     void saveStarPattern(StarPattern starPattern);
+
+    void deleteStarPattern(Integer id);
 }

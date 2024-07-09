@@ -1,5 +1,6 @@
 package com.Ironhack.Starlit_One.service.impl;
 
+import com.Ironhack.Starlit_One.model.StarPattern;
 import com.Ironhack.Starlit_One.model.Stars;
 
 import com.Ironhack.Starlit_One.repository.StarsRepository;
@@ -64,5 +65,14 @@ public class StarsService implements IStarsService {
         if (starsOptional.isEmpty())
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Stars " + starId + " were not found");
         starsRepository.save(stars);
+    }
+
+    // Delete stars
+
+    @Override
+    public void deleteStars(String starId) {
+        Optional<Stars> starsOptional = starsRepository.findById(starId);
+        if (starsOptional.isEmpty()) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Stars " + starId + "were not found");
+        starsRepository.deleteById(starId);
     }
 }

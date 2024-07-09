@@ -58,5 +58,11 @@ public class StarsController implements IStarsController {
     public void updateStars(@RequestBody @Valid Stars stars, @PathVariable String starId) {
         starsService.updateStars(stars, starId);
     }
+
+    @DeleteMapping("/stars/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteStars(@PathVariable String starId) {
+        starsService.deleteStars(starId);
+    }
 }
 

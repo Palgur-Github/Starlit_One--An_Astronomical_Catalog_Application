@@ -66,4 +66,11 @@ public class StarPatternService implements IStarPatternService {
         starPattern.setTranslation(translation);
         starPatternRepository.save(starPattern);
     }
+    // Delete a star pattern
+    @Override
+    public void deleteStarPattern(Integer id) {
+        Optional<StarPattern> starPatternOptional = starPatternRepository.findById(id);
+        if (starPatternOptional.isEmpty()) throw new ResponseStatusException(HttpStatus.NOT_FOUND, "The star pattern " + id + "was not found");
+        starPatternRepository.deleteById(id);
+    }
 }

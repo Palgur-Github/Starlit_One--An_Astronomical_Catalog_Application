@@ -17,4 +17,6 @@ public interface IStarsController {
     void saveStars(Stars stars);
 
     void updateStars(Stars stars, String starId);
+
+    void deleteStars(String starId);
 }
