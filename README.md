@@ -2,23 +2,19 @@
 
 # Starlit_One: An Astronomical Catalog Application
 
-## Introduction
-
-This is a backend application project. 
-
-<br>
-
-## Requirements
-
 ## Description of the project
 
-This project creates a simple astronomical catalog of star patterns such as constellations and asterisms.
+This backend application project creates a simple astronomical catalog of star patterns such as constellations and asterisms.
 
 - A star pattern is a constellation or a group of stars (IUA, 2024)
 - A constellation is an official or defined star pattern (International Astronomical Union (IUA, 1930)
 - An asterism is an unofficial sub-pattern within a constellation or unofficial pattern that overlaps constellations (IUA, 2024)
 
-The project has SQL tables, a parent class, inherited classes, interfaces, services, controller, and repository testing. 
+The project has SQL tables, a parent class, inherited classes, interfaces, services, controller, and repository testing.
+
+Some caveats:
+
+Only spring and summer phenomena were considered for this project. These constellations and asterisms manifest in the northern hemisphere. These star patterns are disjoint to simplify table structuring.
 
 <br>
 
@@ -30,13 +26,44 @@ The project has SQL tables, a parent class, inherited classes, interfaces, servi
 
 For this project, there are two implemented database tables. The database data represents true information for a simple astronomical catalog.
 
-| pattern_id | name            | description          | discovery_period   | pattern_type  |   
-| ---------- | --------------- | -------------------- | ------------------ | ------------- |  
-| P1         | Aquila          | The eagle            | Ancient            | Constellation |
-| P2         | Cygnus          | The swan             | Ancient            | Constellation |
-| P3         | Lyra            | The lyre             | Ancient            | Constellation |
-| P4         | Northern Cross  | The Northern Cross   | Middle Ages        | Asterism      |
-| P5         | Summer Triangle | The Summer Triangle  | Modern Era         | Asterism      |
+### Star Pattern
+
+| id | name            | translation         | discovery_period | pattern_type  | main_star_count | 
+| -- | --------------- | ------------------- | ---------------- | ------------- | --------------- |
+| 1  | Canes Venatici  | The Hunting Dogs    | Modern           | Constellation | 3               |
+| 2  | Sagitta         | The Arrow           | Ancient          | Constellation | 4               |
+| 3  | Septentrio      | Seven Plough Oxen   | Ancient          | Asterism      | 7               |
+| 4  | Summer Triangle | The Summer Triangle | Modern           | Asterism      | 3               |
+| 5  | Ursa Minor      | The Little Bear     | Ancient          | Constellation | 7               |
+
+### Stars
+
+| star_id  | name                  | color        | star_type                      | pattern_id | 
+| -------- | --------------------- | ------------ |--------------------------------| ---------- |
+| S1       | Cor Caroli            | yellow-white | main-sequence/ variable binary | 1          |
+| S2       | Chara                 | yellow       | main sequence                  | 1          |
+| S3       | 20 Canum Venaticorum  | yellow-white | giant                          | 1          |
+| S4       | Sham                  | yellow       | luminous giant                 | 2          |
+| S5       | Beta Sagittae         | yellow       | luminous giant                 | 2          |
+| S6       | Gamma Sagittae        | orange-red   | giant                          | 2          |
+| S7       | Delta Sagittae        | red          | spectroscopic binary           | 2          |
+| S8       | Alioth                | blue-white   | variable                       | 3          |
+| S9       | Dubhe                 | blue-white   | spectroscopic binary           | 3          |
+| S10      | Alkaid                | blue         | main sequence                  | 3          |
+| S11      | Mizar                 | blue-white   | spectroscopic binary           | 3          |
+| S12      | Megrez                | blue-white   | main sequence                  | 3          |
+| S13      | Phecda                | blue-white   | main sequence                  | 3          |
+| S14      | Merak                 | blue-white   | main sequence                  | 3          |
+| S15      | Altair                | blue-white   | subgiant                       | 4          |
+| S16      | Deneb                 | blue-white   | evolved supergiant             | 4          |
+| S17      | Vega                  | blue-white   | main sequence                  | 4          |
+| S18      | Polaris               | yellow-white | multiple star system           | 5          |
+| S19      | Kochab                | orange-red   | variable giant                 | 5          |
+| S20      | Pherkad               | blue-white   | giant                          | 5          |
+| S21      | Yildun                | blue-white   | main sequence                  | 5          |
+| S22      | Epsilon Ursae Minoris | yellow       | giant                          | 5          |
+| S23      | Akhfa Al Farkadain    | blue-white   | variable                       | 5          |
+| S24      | Anwar Al Farkadain    | yellow-white | main sequence                  | 5          |
 
 <br>
 
@@ -59,10 +86,13 @@ For this project, there are two implemented database tables. The database data r
 ## Resources
 
 
-References: 
+References:
 
 https://www.iau.org/public/themes/constellations/
+
 https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
+
+https://www.constellation-guide.com/big-dipper/
 
 <br>
 

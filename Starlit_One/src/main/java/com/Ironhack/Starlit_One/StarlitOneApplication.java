@@ -9,5 +9,4 @@ public class StarlitOneApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(StarlitOneApplication.class, args);
 	}
-
 }
