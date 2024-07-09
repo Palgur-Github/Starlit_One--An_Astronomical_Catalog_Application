@@ -39,7 +39,7 @@ For this project, there are two implemented database tables. The database data r
 ### Stars
 
 | star_id  | name                  | color        | star_type                      | pattern_id | 
-| -------- | --------------------- | ------------ |--------------------------------| ---------- |
+| -------- | --------------------- | ------------ | ------------------------------ | ---------- |
 | S1       | Cor Caroli            | yellow-white | main-sequence/ variable binary | 1          |
 | S2       | Chara                 | yellow       | main sequence                  | 1          |
 | S3       | 20 Canum Venaticorum  | yellow-white | giant                          | 1          |
