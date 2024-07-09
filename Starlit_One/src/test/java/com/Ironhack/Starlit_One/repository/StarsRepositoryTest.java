@@ -22,7 +22,7 @@ class StarsRepositoryTest {
     @BeforeEach
     void setUp() {
 
-        stars = new Stars("S17",	"Vega", "blue-white", "main sequence");
+        stars = new Stars("S17", "Vega", "blue-white", "main sequence");
         starsRepository.save(stars);
         System.out.println(stars);
 

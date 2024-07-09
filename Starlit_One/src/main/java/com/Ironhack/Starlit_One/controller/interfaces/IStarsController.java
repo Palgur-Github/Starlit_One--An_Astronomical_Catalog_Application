@@ -1,10 +1,11 @@
-package com.Ironhack.Starlit_One.service.interfaces;
+package com.Ironhack.Starlit_One.controller.interfaces;
 
 import com.Ironhack.Starlit_One.model.Stars;
 
 import java.util.List;
 
-public interface IStarsService {
+public interface IStarsController {
+
     List<Stars> getAllStars();
 
     Stars getStarsById(String starId);
