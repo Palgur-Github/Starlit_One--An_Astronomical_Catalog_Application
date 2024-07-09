@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,7 @@ public class StarPattern {
     private Integer id;
     private String name;
     private String translation;
+    @NotEmpty(message = "The translation cannot be empty")
     private String discoveryPeriod;
     private String patternType;
     private Integer mainStarCount;
