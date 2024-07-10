@@ -69,6 +69,9 @@ For this project, there are two implemented database tables. The database data r
 
 ## Used Technologies
 
+Spring Boot Application, Java, JPA, JUnit testing, IntelliJ IDEA software, MAVEN, Git, GitHub,
+MySQLWorkbench, SQL, HTTP, Safari Browser, MacBook Air, & IPhone.
+
 <br>
 
 ## Controllers and Routes structure
@@ -81,12 +84,22 @@ For this project, there are two implemented database tables. The database data r
 
 ## Future Work
 
+To develop a front-end application for Starlit One.
+
 <br>
 
 ## Resources
 
+GitHub, https://github.com/
 
-References:
+IntelliJ IDEA software, https://www.jetbrains.com/idea/
+
+Spring, https://spring.io
+
+MySQL Workbench, https://www.mysql.com/products/workbench/
+
+
+### References
 
 https://www.iau.org/public/themes/constellations/
 
@@ -97,5 +110,7 @@ https://www.constellation-guide.com/big-dipper/
 <br>
 
 ## Team members
+
+Jorge E. Jiménez Ramírez
 
 <br>
