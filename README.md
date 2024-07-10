@@ -20,6 +20,9 @@ Only spring and summer phenomena were considered for this project. These constel
 
 ## Class Diagram
 
+![Starlit One Diagram](https://github.com/Palgur-Github/Starlit_One--An_Astronomical_Catalog_Application/assets/172400967/27ae022a-af57-478d-bdef-86f2589286c8)
+
+
 <br>
 
 ## Setup
@@ -70,7 +73,7 @@ For this project, there are two implemented database tables. The database data r
 ## Used Technologies
 
 Spring Boot Application, Java, JPA, JUnit testing, IntelliJ IDEA software, MAVEN, Git, GitHub,
-MySQLWorkbench, SQL, HTTP, Safari Browser, MacBook Air, & IPhone.
+MySQLWorkbench, SQL, HTTP, Safari Browser, MacBook Air, & iPhone.
 
 <br>
 
