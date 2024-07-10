@@ -82,6 +82,8 @@ MySQLWorkbench, SQL, HTTP, Safari Browser, MacBook Air, & iPhone.
 
 ## Extra links(Trello, Presentation Slides, etc…)
 
+https://trello.com/b/24JG5CJ4/starlit-one-management
+
 <br>
 
 ## Future Work
