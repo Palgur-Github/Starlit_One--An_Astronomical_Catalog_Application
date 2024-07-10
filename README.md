@@ -22,7 +22,6 @@ Only spring and summer phenomena were considered for this project. These constel
 
 ![Starlit One Diagram](https://github.com/Palgur-Github/Starlit_One--An_Astronomical_Catalog_Application/assets/172400967/27ae022a-af57-478d-bdef-86f2589286c8)
 
-
 <br>
 
 ## Setup
