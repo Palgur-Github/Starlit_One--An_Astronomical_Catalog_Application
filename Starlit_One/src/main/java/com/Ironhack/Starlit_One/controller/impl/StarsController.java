@@ -25,7 +25,7 @@ public class StarsController implements IStarsController {
         return starsService.getAllStars();
     }
 
-    @GetMapping("/patients/{patientId}")
+    @GetMapping("/stars/starId/{starId}")
     public Stars getStarsById(@PathVariable String starId) {
         return starsService.getStarsById(starId);
     }
@@ -39,7 +39,7 @@ public class StarsController implements IStarsController {
 
     // Get stars by star types
 
-    @GetMapping("/stars/star_type/{star_type}")
+    @GetMapping("/stars/starType/{starType}")
     public List<Stars> getStarsByStarType(@PathVariable String starType) {
         return starsService.getStarsByStarType(starType);
     }
@@ -53,13 +53,13 @@ public class StarsController implements IStarsController {
     }
 
     // Update stars' information
-    @PutMapping("/stars/{starId}")
+    @PutMapping("/stars/starId/{starId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateStars(@RequestBody @Valid Stars stars, @PathVariable String starId) {
         starsService.updateStars(stars, starId);
     }
 
-    @DeleteMapping("/stars/{id}")
+    @DeleteMapping("/stars/starId/{starId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteStars(@PathVariable String starId) {
         starsService.deleteStars(starId);

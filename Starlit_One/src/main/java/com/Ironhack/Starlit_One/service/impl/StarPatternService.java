@@ -2,6 +2,7 @@ package com.Ironhack.Starlit_One.service.impl;
 
 import com.Ironhack.Starlit_One.model.StarPattern;
 
+import com.Ironhack.Starlit_One.model.Stars;
 import com.Ironhack.Starlit_One.repository.StarPatternRepository;
 import com.Ironhack.Starlit_One.service.interfaces.IStarPatternService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +67,7 @@ public class StarPatternService implements IStarPatternService {
         starPattern.setTranslation(translation);
         starPatternRepository.save(starPattern);
     }
+
     // Delete a star pattern
     @Override
     public void deleteStarPattern(Integer id) {
