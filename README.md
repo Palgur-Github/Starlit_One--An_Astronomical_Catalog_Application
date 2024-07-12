@@ -82,6 +82,42 @@ MySQLWorkbench, SQL, HTTP, Safari Browser, MacBook Air, & iPhone.
 
 ## Controllers and Routes structure
 
+###Star Pattern Controller & Service
+
+This project can perform different CRUD requests (i.e., Create, Read, Update, & Delete).
+
+The "StarPatternController[Service]" implementation reads star patterns [Get request], http://localhost:8080/api/starPatterns,
+
+the star pattern's id, http://localhost:8080/api/starPatterns/id/{id},
+
+the star pattern's translation, http://localhost:8080/api/starPatterns/translation/{translation},
+
+and the star pattern's discovery period, http://localhost:8080/api/starPatterns/discoveryPeriod/{discoveryPeriod}.
+
+The "StarPatternController[Service]" implementation creates star patterns [Post request], http://localhost:8080/api/starPatterns.
+
+The "StarPatternController[Service]" implementation updates
+
+the star pattern's translation [Patch request], http://localhost:8080/api/starPatterns/translation/{id}.
+
+The "StarPatternController[Service]" implementation deletes the star pattern [Delete request], http://localhost:8080/api/starPatterns.
+
+### Stars Controller & Service
+
+The "StarsController[Service]" implementation reads stars [Get request], http://localhost:8080/api/stars, 
+
+the stars' id, http://localhost:8080/api/stars/starId/{starId}, 
+
+the stars' color, http://localhost:8080/api/stars/color/{color}, 
+
+and the stars' type, http://localhost:8080/api/stars/starType/{starType}.
+
+The "StarsController[Service]" implementation creates stars [Post request], http://localhost:8080/api/stars.
+
+The "StarsController[Service]" implementation updates stars [Put request],  http://localhost:8080/api/stars/starId/{starId}.
+
+The "StarsController[Service]" implementation deletes stars [Delete request], http://localhost:8080/api/stars.
+
 <br>
 
 ## Extra links(Trello, Presentation Slides, etc…)
