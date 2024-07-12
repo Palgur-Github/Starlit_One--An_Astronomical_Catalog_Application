@@ -20,7 +20,11 @@ Only spring and summer phenomena were considered for this project. These constel
 
 ## Class Diagram
 
-![Starlit One Diagram](https://github.com/Palgur-Github/Starlit_One--An_Astronomical_Catalog_Application/assets/172400967/27ae022a-af57-478d-bdef-86f2589286c8)
+![Starlit One Diagram](https://github.com/user-attachments/assets/163bbcef-4ade-4c58-804b-f2d406f9c7b3)
+
+### Workbench Version
+
+<img width="713" alt="Workbench Image" src="https://github.com/user-attachments/assets/4d38d2b9-e196-424d-b637-a3f9e9f11419">
 
 <br>
 
@@ -110,6 +114,8 @@ https://www.iau.org/public/themes/constellations/
 https://www.universeguide.com/blogarticle/list-of-constellations-ordered-by-main-star-count-smallest-to-largest
 
 https://www.constellation-guide.com/big-dipper/
+
+https://arxiv.org/pdf/1507.01466
 
 <br>
 
