@@ -19,13 +19,6 @@ public class Stars {
     @ManyToOne
     private StarPattern starPattern;
 
-    public Stars(String starId, String name, String color, String starType) {
-        this.starId = starId;
-        this.name = name;
-        this.color = color;
-        this.starType = starType;
-    }
-
     public String getId() {
         return starId;
     }

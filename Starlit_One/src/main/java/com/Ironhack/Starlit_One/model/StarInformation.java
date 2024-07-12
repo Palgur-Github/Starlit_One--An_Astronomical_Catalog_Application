@@ -12,8 +12,10 @@ import lombok.NoArgsConstructor;
 @DiscriminatorValue("info")  // to distinguish between Stars and StarInfo
 @Inheritance
 public class StarInformation extends Stars {
+    private String starInfoId;
     private String relatedMyths;
-    private Double starAgeInYears;
-    @OneToOne
+    private String starAgeInYears;
+    @ManyToOne
     private StarPattern starPattern;
+
 }

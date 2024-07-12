@@ -22,6 +22,18 @@ CREATE TABLE stars (
 	FOREIGN KEY (pattern_id) REFERENCES star_pattern(id)
 );
 
+CREATE TABLE starInformation (
+	star_info_id VARCHAR(255) Not NULL,
+	name VARCHAR(255),
+    	color VARCHAR(255),
+        star_type VARCHAR(255),
+	    related_myths VARCHAR(255),
+        star_age_in_years VARCHAR(255),
+        stars_id VARCHAR(255) NOT NULL,
+	PRIMARY KEY (star_info_id),
+	FOREIGN KEY (stars_id) REFERENCES stars(star_id)
+);
+
 INSERT INTO star_pattern (name, translation, discovery_period, pattern_type, main_star_count) VALUES
 ('Canes Venatici', 'The Hunting Dogs', 'Modern', 'Constellation', 3 ),
 ('Sagitta', 'The Arrow', 'Ancient', 'Constellation', 4 ),
@@ -55,5 +67,14 @@ INSERT INTO stars ( star_id, name, color, star_type, pattern_id ) VALUES
 ('S23', 'Akhfa Al Farkadain', 'blue-white', 'variable', 5 ),
 ('S24', 'Anwar Al Farkadain', 'yellow-white', 'main sequence', 5 );
 
+INSERT INTO starInformation ( star_info_id, name, color, star_type, related_myths, star_age_in_years, stars_id ) VALUES
+('SI01', 'Cor Caroli', 'yellow-white', 'main-sequence/ variable binary',
+'Asterion and Chara are the hunting dogs of Boötes', '190 million years', 'S01' ),
+('SI02', 'Chara', 'yellow', 'main sequence', 
+'Asterion and Chara are the hunting dogs of Boötes', '7.1 million years', 'S01' ),
+('SI03', '20 Canum Venaticorum', 'yellow-white', 'giant', 
+'Asterion and Chara are the hunting dogs of Boötes', '750 million years', 'S01' );
+
 SELECT * FROM star_pattern;
 SELECT * FROM stars;
+SELECT * FROM starInformation;
