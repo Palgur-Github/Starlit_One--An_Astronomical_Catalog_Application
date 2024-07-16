@@ -1,5 +1,6 @@
 package com.Ironhack.Starlit_One.repository;
 
+import com.Ironhack.Starlit_One.model.StarPattern;
 import com.Ironhack.Starlit_One.model.Stars;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,13 +17,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class StarsRepositoryTest {
     @Autowired
     StarsRepository starsRepository;
+    @Autowired
+    StarPatternRepository starPatternRepository;
+
+    StarPattern starPattern;
 
     Stars stars;
 
     @BeforeEach
     void setUp() {
 
-        stars = new Stars("S17", "Vega", "blue-white", "main sequence");
+        starPattern = new StarPattern(5,"Ursa Minor", "The Little Bear", "Ancient", "Constellation", 7);
+        starPatternRepository.save(starPattern);
+
+        stars = new Stars("S17", "Vega", "blue-white", "main sequence",starPattern);
         starsRepository.save(stars);
         System.out.println(stars);
 
@@ -38,7 +46,7 @@ class StarsRepositoryTest {
     public void findAll_stars_starList() {
         List<Stars> starList = starsRepository.findAll();
         System.out.println(starList);
-        assertEquals(1, starList.size());
+        assertEquals(4, starList.size());
     }
 
     @Test

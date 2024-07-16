@@ -53,7 +53,7 @@ public class StarPatternControllerTest {
 
     @Test
     void getAllStarPatterns_validRequest_allStarPatterns() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(get("/api/star_patterns"))
+        MvcResult mvcResult = mockMvc.perform(get("/api/starPatterns"))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON))
                 .andReturn();
@@ -63,7 +63,7 @@ public class StarPatternControllerTest {
 
     @Test
     void getStarPatternsById_validId_correctStarPattern() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(get("/api/star_patterns/3"))
+        MvcResult mvcResult = mockMvc.perform(get("/api/starPatterns/3"))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON))
                 .andReturn();
@@ -73,7 +73,7 @@ public class StarPatternControllerTest {
 
     @Test
     void getStarPatternsById_invalidId_notFound() throws Exception {
-        mockMvc.perform(get("/api/star_patterns/3").contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get("/api/starPatterns/3").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound())
                 .andReturn();
     }
@@ -82,7 +82,7 @@ public class StarPatternControllerTest {
     void saveStarPattern_validBody_starPatternSaved() throws Exception {
         String body = objectMapper.writeValueAsString(starPattern);
 
-        mockMvc.perform(post("/api/star_patterns").content(body).contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(post("/api/starPatterns").content(body).contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
                 .andReturn();
 

@@ -1,5 +1,7 @@
 package com.Ironhack.Starlit_One.controller.impl;
 
+import com.Ironhack.Starlit_One.model.StarPattern;
+import com.Ironhack.Starlit_One.repository.StarPatternRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.Ironhack.Starlit_One.model.Stars;
 import com.Ironhack.Starlit_One.repository.StarsRepository;
@@ -28,6 +30,9 @@ public class StarsControllerTest {
     StarsRepository starsRepository;
 
     @Autowired
+    StarPatternRepository starPatternRepository;
+
+    @Autowired
     WebApplicationContext webApplicationContext;
 
     MockMvc mockMvc;
@@ -40,9 +45,9 @@ public class StarsControllerTest {
     void setUp() {
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
 
-        Optional<Stars> starsOptional = starsRepository.findById("S18");
-        assertTrue(starsOptional.isPresent());
-        stars = new Stars("S18", "Polaris", "yellow-white", "multiple star system");
+        Optional<StarPattern> starPatternOptional = starPatternRepository.findById(5);
+        assertTrue(starPatternOptional.isPresent());
+        stars = new Stars("S18", "Polaris", "yellow-white", "multiple star system", starPatternOptional.get());
     }
 
     @AfterEach
@@ -62,7 +67,7 @@ public class StarsControllerTest {
 
     @Test
     void getStarsById_validId_correctStars() throws Exception {
-        MvcResult mvcResult = mockMvc.perform(get("/api/stars/S18"))
+        MvcResult mvcResult = mockMvc.perform(get("/api/stars/starId/S18"))
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON))
                 .andReturn();
@@ -91,15 +96,15 @@ public class StarsControllerTest {
 
     @Test
     void updateStars_validBody_starsUpdated() throws Exception {
-        stars.setColor("yellow-white");
+        stars.setColor("yellow");
 
         String body = objectMapper.writeValueAsString(stars);
 
-        mockMvc.perform(put("/api/courses/yellow-white").content(body).contentType(MediaType.APPLICATION_JSON))
+        mockMvc.perform(put("/api/stars/starId/S18").content(body).contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNoContent())
                 .andReturn();
 
-        assertTrue(starsRepository.findAll().toString().contains("yellow-white"));
+        assertTrue(starsRepository.findAll().toString().contains("yellow"));
     }
 
 
@@ -107,7 +112,7 @@ public class StarsControllerTest {
     void deleteStars_validRequest_starsDeleted() throws Exception {
         starsRepository.save(stars);
 
-        mockMvc.perform(delete("/api/stars/polaris"))
+        mockMvc.perform(delete("/api/stars/starId/S18"))
                 .andExpect(status().isNoContent())
                 .andReturn();
 
