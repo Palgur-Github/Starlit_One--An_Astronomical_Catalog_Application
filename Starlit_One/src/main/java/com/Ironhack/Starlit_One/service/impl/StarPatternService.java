@@ -56,6 +56,15 @@ public class StarPatternService implements IStarPatternService {
         starPatternRepository.save(starPattern);
     }
 
+    // Update a star pattern's information
+    @Override
+    public void updateStarPattern(StarPattern starPattern, Integer id) {
+        Optional<StarPattern> starPatternOptional = starPatternRepository.findById(id);
+        if (starPatternOptional.isEmpty())
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "The star pattern " + id + " was not found");
+        starPatternRepository.save(starPattern);
+    }
+
     // Update a star pattern's translation
 
     @Override

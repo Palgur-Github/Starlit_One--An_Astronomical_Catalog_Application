@@ -67,6 +67,17 @@ public class StarsService implements IStarsService {
         starsRepository.save(stars);
     }
 
+    // Update stars' colors
+    @Override
+    public void updateStarsColor(String color, String starId) {
+        Optional<Stars> starsOptional = starsRepository.findById(starId);
+        if (starsOptional.isEmpty())
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "The color " + starId + " was not found");
+        Stars stars = starsOptional.get();
+        stars.setColor(color);
+        starsRepository.save(stars);
+    }
+
     // Delete stars
 
     @Override

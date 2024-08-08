@@ -48,6 +48,13 @@ public class StarPatternController implements IStarPatternController {
         starPatternService.saveStarPattern(starPattern);
     }
 
+    // Update a star pattern's information
+    @PutMapping("/starPatterns/id/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateStarPattern(@RequestBody @Valid StarPattern starPattern, @PathVariable Integer id) {
+        starPatternService.updateStarPattern(starPattern, id);
+    }
+
     // Update  a star pattern's translation
     @PatchMapping("/starPatterns/translation/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)

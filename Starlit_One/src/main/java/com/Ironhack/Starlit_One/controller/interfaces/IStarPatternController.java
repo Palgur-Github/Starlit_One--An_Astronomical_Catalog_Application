@@ -1,7 +1,6 @@
 package com.Ironhack.Starlit_One.controller.interfaces;
 
 import com.Ironhack.Starlit_One.model.StarPattern;
-import com.Ironhack.Starlit_One.model.Stars;
 
 import java.util.List;
 

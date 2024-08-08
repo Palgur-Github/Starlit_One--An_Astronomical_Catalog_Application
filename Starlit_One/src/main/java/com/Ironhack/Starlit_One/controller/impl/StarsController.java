@@ -1,5 +1,6 @@
 package com.Ironhack.Starlit_One.controller.impl;
 
+import com.Ironhack.Starlit_One.controller.dto.StarsColorDTO;
 import com.Ironhack.Starlit_One.controller.interfaces.IStarsController;
 import com.Ironhack.Starlit_One.model.Stars;
 import com.Ironhack.Starlit_One.service.interfaces.IStarsService;
@@ -57,6 +58,13 @@ public class StarsController implements IStarsController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateStars(@RequestBody @Valid Stars stars, @PathVariable String starId) {
         starsService.updateStars(stars, starId);
+    }
+
+    // Update  stars' colors
+    @PatchMapping("/stars/color/{starId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateStarsColor(@RequestBody @Valid StarsColorDTO starsColorDTO, @PathVariable String starId) {
+        starsService.updateStarsColor(starsColorDTO.getColor(), starId);
     }
 
     @DeleteMapping("/stars/starId/{starId}")
